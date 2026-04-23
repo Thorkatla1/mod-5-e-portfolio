@@ -21,6 +21,9 @@ li {
   line-height: 1.5;
   font-size: 16px;
 }
+button{
+  cursor: pointer;
+}
 .title {
   font-size: 80px;
   margin-bottom: 12px;
@@ -76,11 +79,19 @@ LANDING PAGE
   justify-content: center;
   border-radius: 50%;
 }
-/* 
-
-NAVIGATION 
-
-*/
+.mail__btn {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: #242424;
+  color: white;
+  position: absolute;
+  bottom: 32px;
+  right: 40px;
+}
+/*nav*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -92,9 +103,9 @@ nav {
   padding: 0 20px;
 }
 #personal-logo {
-  filter: invert(1);
   height: 50px;
   width: 50px;
+  filter: invert(1);
 }
 .nav__link--list {
   display: flex;
