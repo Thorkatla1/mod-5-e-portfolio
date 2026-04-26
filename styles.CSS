@@ -27,6 +27,7 @@ button {
 }
 .container {
   padding: 50px 0;
+  width: 100%;
 }
 .row {
   width: 100%;
@@ -49,9 +50,34 @@ button {
 .click:active {
   transform: scale(0.8);
 }
-/* 
+.link__hover-effect {
+  position: relative;
+}
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0; 
+  transition: all 300ms ease;
+}
+.link__hover-effect--white{
+background-color: white;
+}
+.link__hover-effect--black{
+background-color: black;
+}
+
+.link__hover-effect:hover:after{
+  left: 0;
+  width: 100%;
+}
+
+/*
 
 Landing Page
+
 
 */
 
@@ -193,6 +219,7 @@ Projects
   border-radius: 20px;
   box-shadow: 0 20px 80px rgb(0, 0, 0, 0.45);
   overflow: hidden;
+  margin: 96px 0;
 }
 
 .project__wrapper:hover .project__description {
@@ -210,7 +237,6 @@ Projects
   opacity: 0;
 }
 
-
 .project__wrapper:hover .project__img {
   transform: scale(1.07);
   filter: blur(5px);
@@ -218,7 +244,6 @@ Projects
 
 .project__wrapper:hover .project__wrapper--bg {
   opacity: 0.7;
- 
 }
 .project__description {
   position: absolute;
@@ -226,8 +251,10 @@ Projects
   left: 90px;
   transform: translateY(100%);
   color: white;
-  opacity: 0; 
-  transition: opacity 300ms, transform 450ms ease;
+  opacity: 0;
+  transition:
+    opacity 300ms,
+    transform 450ms ease;
   max-width: 550px;
 }
 
@@ -251,4 +278,29 @@ footer
 
 */
 
-/* 3:04 */
+footer {
+  background-color: #242424;
+  display: flex;
+  padding: 6% 0;
+}
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo--img {
+  width: 70px;
+}
+.footer__social--list {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+
+  justify-content: space-around;
+  margin: 28px 0;
+}
+.footer__social--link,
+.footer__copyright {
+  color: white;
+}
