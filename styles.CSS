@@ -75,7 +75,28 @@ button {
   left: 0;
   width: 100%;
 }
-
+input,
+textarea {
+  width: 100%;
+  background-color: #242424;
+  color: white;
+  outline: none;
+  border: 3px solid #c0c4cc;
+  border-top:none ;
+  border-left: none;
+  border-right: none;
+  height: 40px;
+}
+textarea{
+  resize: vertical;
+  height: 100px;
+  padding: 15px 0;
+  margin-top: 8%;
+}
+label{
+  font-size: 14px;
+  font-weight: bold;
+}
 /*
 
 Landing Page
@@ -221,12 +242,13 @@ Modal
 .modal__half {
   width: 50%;
   padding: 40px 72px;
-}
-.modal__about {
-  background-color: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.modal__about {
+  background-color: rgb(245, 245, 245);
+  
 }
 .modal__contact {
   background-color: #242424;
@@ -266,12 +288,16 @@ Modal
 }
 .modal__sub-title {
   margin: 16px 0 24px 0;
-  font-size: 20px;
+  font-size: 14px;
 }
 .modal__para {
   font-size: 18px;
   margin-bottom: 12px;
   line-height: 1.75;
+}
+.form__item{
+  margin-bottom: 20px;
+
 }
 
 /*
