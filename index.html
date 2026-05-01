@@ -131,7 +131,7 @@
             <figure class="modal__language">
               <img
                 class="modal__language--img"
-                src="./assets/html_logo.webp"
+                src="./assets/html__logo.png"
                 alt=""
               />
               <span class="language__name">HTML</span>
@@ -164,26 +164,21 @@
         </div>
         <div class="modal__half modal__contact">
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
-          <h3 class="modal__sub-title modal__sub-title--contact">
-            I'm looking forward to hearing from you.
-          </h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently looking for new opportunities.
+          </h4>
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input class="input" name="user_name" type="text" />
+              <input class="input" name="user_name" type="text"  required/>
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" name="user_email" type="email" />
+              <input class="input" name="user_email" type="email" required />
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea
-                class="input"
-                name="message"
-                type="text"
-                required
-              ></textarea>
+              <textarea class="input" name="message" type="text"> </textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               Send it my way!
