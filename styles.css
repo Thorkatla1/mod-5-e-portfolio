@@ -163,6 +163,7 @@ Landing Page
 
 #landing-page {
   min-height: 100vh;
+  position: relative;
 }
 .header {
   position: absolute;
@@ -293,7 +294,6 @@ Modal
   height: 700px;
   visibility: hidden;
   border-radius: 20px;
-
   overflow: hidden;
   display: flex;
   visibility: hidden;
@@ -336,7 +336,7 @@ Modal
 }
 .modal__language {
   width: 25%;
-  padding: 16px;
+  padding: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -562,7 +562,7 @@ Shapes
 */
 
 .shape {
-  position: fixed;
+  position: absolute;
 }
 
 .shape--0 {
@@ -602,3 +602,44 @@ Shapes
   left: 80vw;
 }
 
+/*Small phones, tablets, large smart phones*/
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+  .header__para {
+    font-size: 20px;
+  }
+  .modal {
+    top: 0;
+    left: 0;
+    height: auto;
+    transform: none;
+    width: 100%;
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
+
+  .modal__half {
+    width: 100%;
+  }
+  .modal__sub-title {
+    font-size: 18px;
+  }
+  .modal__language {
+    width: 25%;
+    padding: 40px;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+  .header__para {
+    font-size: 18px;
+  }
+}
