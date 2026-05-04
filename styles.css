@@ -205,9 +205,11 @@ Landing Page
   border: none;
   background-color: #242424;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
+  z-index: 100;
+  box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
 }
 .scroll {
   position: absolute;
@@ -610,6 +612,7 @@ Shapes
   }
   .header__para {
     font-size: 20px;
+  
   }
   .modal {
     top: 0;
@@ -627,10 +630,6 @@ Shapes
   .modal__sub-title {
     font-size: 18px;
   }
-  .modal__language {
-    width: 25%;
-    padding: 40px;
-  }
 }
 
 /* Small phones */
@@ -642,7 +641,25 @@ Shapes
   .header__para {
     font-size: 18px;
   }
-  .nav__link:first-child{
+  .nav__link:first-child {
     display: none;
+  }
+  .project__description--title {
+    font-size: 28px;
+  }
+  .project__description--para {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .project__description--sub-title {
+    margin-bottom: 8px;
+  }
+  .modal__half {
+    padding: 40px;
   }
 }
