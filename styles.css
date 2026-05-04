@@ -642,4 +642,7 @@ Shapes
   .header__para {
     font-size: 18px;
   }
+  .nav__link:first-child{
+    display: none;
+  }
 }
